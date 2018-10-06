@@ -23,19 +23,20 @@ body {
   padding: 0.5rem;
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #line-animation-nav a::before {
   content: ' ';
-  border: 1px solid orange;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: 100%;
+  height: 2px;
+  background: orange;
+  width: 0%;
 
   transition: 0.5s;
 }
 
 #line-animation-nav a:hover::before {
-  right: 0;
+  width: 100%;
 }
