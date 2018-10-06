@@ -1,5 +1,8 @@
 :root {
   font-size: 16px;
+
+  --stripes-foreground: #606dbc;
+  --stripes-background: #465298;
 }
 
 * {
@@ -9,12 +12,22 @@
   padding: 0;
 }
 
-body {
-  /**/
+header {
+  background-color: skyblue;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  min-height: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #line-animation-nav {
   display: flex;
+
+  background: white;
+  margin: 1rem;
 }
 
 #line-animation-nav a {
